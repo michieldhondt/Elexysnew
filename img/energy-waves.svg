@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="bg" cx="70%" cy="20%" r="90%">
+      <stop offset="0" stop-color="#6f8cff"/>
+      <stop offset=".45" stop-color="#3a2fe0"/>
+      <stop offset="1" stop-color="#1c0a8a"/>
+    </radialGradient>
+    <filter id="glow" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="fade" x1="0" x2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".35" stop-color="#e8f0ff" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#b8d4ff" stop-opacity=".6"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="900" fill="url(#bg)"/>
+  <g fill="none" stroke="url(#fade)" filter="url(#glow)" stroke-linecap="round">
+    <path d="M0 250 C 150 150, 260 330, 420 230 S 680 120, 800 200" stroke-width="3"/>
+    <path d="M0 280 C 170 190, 280 360, 440 250 S 690 150, 800 240" stroke-width="1.6" opacity=".8"/>
+    <path d="M0 220 C 140 300, 300 140, 460 210 S 700 260, 800 160" stroke-width="2.2" opacity=".85"/>
+    <path d="M0 310 C 200 230, 320 390, 480 290 S 700 200, 800 290" stroke-width="1.2" opacity=".6"/>
+    <path d="M0 190 C 180 110, 330 280, 500 180 S 720 110, 800 140" stroke-width="1" opacity=".55"/>
+  </g>
+  <g fill="none" stroke="#9fb6ff" stroke-width="3" opacity=".75" transform="translate(560 360)">
+    <!-- hoogspanningsmast -->
+    <path d="M70 0 L20 540 M70 0 L120 540"/>
+    <path d="M-40 90 H180 M-10 60 H150 M-60 200 H200"/>
+    <path d="M58 90 L100 200 L40 330 L110 440 L30 540 M82 90 L40 200 L100 330 L30 440 L110 540"/>
+    <path d="M-40 90 L-40 115 M180 90 L180 115 M-60 200 L-60 225 M200 200 L200 225"/>
+  </g>
+  <g fill="none" stroke="#9fb6ff" stroke-width="1" opacity=".45">
+    <path d="M-40 90 Q 200 160 520 450" transform="translate(560 360) translate(-560 -360)"/>
+  </g>
+</svg>
